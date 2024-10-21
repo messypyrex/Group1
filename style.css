@@ -80,7 +80,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: blue;
+        color: blue;
+        box-shadow: gray;
         }
 
         .about-image {
