@@ -10,69 +10,78 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <style>
       .background {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
       }
 
       #background-vid {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
-  </style>
+    </style>
   </head>
-  <body class=" text-white">
-
+  <body class="text-white">
     <div class="background">
       <video autoplay muted loop id="background-vid">
-          <source src="/img/VID.mp4" type="video/mp4">
+        <source src="/img/VID.mp4" type="video/mp4" />
       </video>
     </div>
-    
 
     <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold" href="#"
-          >THE <br />&emsp;
-          DOER's</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto">
-            <a
-              class="nav-link active text-white fw-semibold"
-              aria-current="page"
-              href="#"
-              >HOME</a
-            >
-            <a class="nav-link text-white fw-semibold" href="#">ABOUT ME</a>
-            <a class="nav-link text-white fw-semibold" href="#">SERVICES</a>
-            <a class="nav-link text-white fw-semibold" href="#">CONTACT</a>
-            <a class="nav-link text-white fw-semibold" href="#">BLOG</a>
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="#"
+            >THE <br />&emsp; DOER's</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a
+                class="nav-link active text-white fw-semibold"
+                aria-current="page"
+                href="#"
+                >HOME</a
+              >
+              <a class="nav-link text-white fw-semibold" href="#about"
+                >ABOUT ME</a
+              >
+              <a class="nav-link text-white fw-semibold" href="#services"
+                >SERVICES</a
+              >
+              <a class="nav-link text-white fw-semibold" href="#contact"
+                >CONTACT</a
+              >
+              <a class="nav-link text-white fw-semibold" href="#certificate"
+                >CERTIFICATES</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </header>
-    <br><br>
+    <br /><br />
     <div class="container-fluid">
       <div class="container text-white">
         <div class="row">
@@ -81,10 +90,6 @@
             <p class="fs-4">
               Hi, I’m Russell Tanio. A student from Caraga State University,
               currently studying in Bachelor of Science in Information System.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-              odit officia facilis, dignissimos vel reiciendis exercitationem
-              expedita eos voluptate maiores similique, incidunt, pariatur minus
-              ipsum ullam? Tempore amet laboriosam quod.
             </p>
           </div>
           <div class="col-lg-5">
@@ -99,7 +104,7 @@
       </div>
     </div>
     <hr />
-    <div class="container-fluid py-5">
+    <div id="about" class="container-fluid py-5">
       <div class="container text-center">
         <h1 class="fs-1 fw-bold">ABOUT ME</h1>
         <span class="fs-4"
@@ -111,7 +116,7 @@
       </div>
     </div>
 
-    <div class="container-fluid py-5">
+    <div id="certificate" class="container-fluid py-5">
       <div class="row gy-3">
         <div class="col-lg-4 col-sm-12">
           <div class="card">
@@ -142,22 +147,19 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr />
+
     <div class="container-fluid py-5">
       <div class="container text-center">
         <h1 class="fs-1 fw-bold">SERVICES</h1>
       </div>
     </div>
 
-    <div class="container-fluid py-5">
+    <div id="services" class="container-fluid py-5">
       <div class="row gy-4">
         <div class="col-lg-3 col-sm-12">
           <div class="card">
-            <img
-              src="/img/ux.png"
-              class="card-img-top w-75"
-              alt="..."
-            />
+            <img src="/img/ux.png" class="card-img-top w-75" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">UX/UI</h5>
             </div>
@@ -165,11 +167,7 @@
         </div>
         <div class="col-lg-3 col-sm-12">
           <div class="card">
-            <img
-              src="/img/cod.png"
-              class="card-img-top w-75"
-              alt="..."
-            />
+            <img src="/img/cod.png" class="card-img-top w-75" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">CODE</h5>
             </div>
@@ -177,11 +175,7 @@
         </div>
         <div class="col-lg-3 col-sm-12">
           <div class="card">
-            <img
-              src="/img/appdevv.png"
-              class="card-img-top w-75"
-              alt="..."
-            />
+            <img src="/img/appdevv.png" class="card-img-top w-75" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">APPDEV</h5>
             </div>
@@ -189,11 +183,7 @@
         </div>
         <div class="col-lg-3 col-sm-12">
           <div class="card">
-            <img
-              src="/img/manager.png"
-              class="card-img-top w-75"
-              alt="..."
-            />
+            <img src="/img/manager.png" class="card-img-top w-75" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">MANAGEMENT</h5>
             </div>
@@ -201,15 +191,38 @@
         </div>
       </div>
     </div>
-<hr>
+    <hr />
 
-<div class="container-fluid py-5">
-  <div class="container text-center">
-    <h1 class="fs-1 fw-bold">CONTACT</h1>
-  </div>
-</div>
+    <div id="contact" class="container-fluid py-5">
+      <div class="container text-center">
+        <h1 class="fs-1 fw-bold">CONTACT</h1>
+      </div>
+    </div>
 
-<div class="container-fluid py-5">
+    <div class="container pb-5">
+      <div class="row text-center">
+        <div class="col">
+          <a href="https://www.facebook.com/russell.tanio/" target="_blank">
+            <i class="bi bi-facebook fs-1 text-white"></i
+          ></a>
+        </div>
+        <div class="col">
+          <a href="https://github.com/Killjoy123" target="_blank">
+            <i class="bi bi-github fs-1 text-white"></i
+          ></a>
+        </div>
+        <div class="col">
+          <a
+            href="https://www.instagram.com/x.xrusty/profilecard/?igsh=NnJkaHVrcW14Mndh"
+            target="_blank"
+          >
+            <i class="bi bi-instagram fs-1 text-white"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid py-5">
   <div class="row gy-4">
     <div class="col-lg-4 col-sm-12">
       <div class="card">
@@ -246,14 +259,7 @@
           <h5 class="card-title text-center">09285875379</h5>
         </div>
       </div>
-    </div>
-
-
-
-
-    
-               
-
+    </div>  -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
