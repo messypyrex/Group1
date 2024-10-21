@@ -17,4 +17,26 @@
 html {
     scroll-behavior: smooth;
   }
+
+.card-link {
+    display: block;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep text color */
+  }
+  
+  .card {
+    transition: transform 0.2s; /* Smooth zoom on hover */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  #services {
+    padding-top: 100px; /* Adjust according to your navbar height */
+    background-color: #f4f4f4; /* Temporary background to ensure visibility */
+  }
+  
+  .card {
+    margin-bottom: 1rem; /* Ensure there's space between cards */
+  }
   
