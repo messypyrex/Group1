@@ -13,3 +13,8 @@
     height: 100%;
     object-fit: cover;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  

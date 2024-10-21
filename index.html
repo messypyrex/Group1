@@ -61,7 +61,7 @@
               <a
                 class="nav-link active text-white fw-semibold"
                 aria-current="page"
-                href="#"
+                href="#home"
                 >HOME</a
               >
               <a class="nav-link text-white fw-semibold" href="#about"
@@ -82,14 +82,21 @@
       </nav>
     </header>
     <br /><br />
-    <div class="container-fluid">
+    <div id="home" class="container-fluid py-5">
       <div class="container text-white">
         <div class="row">
           <div class="col-lg-7">
             <h1 class="display-1 fw-bold">My <br />&emsp;Portfolio</h1>
-            <p class="fs-4">
+            <p class="fs-5">
               Hi, I’m Russell Tanio. A student from Caraga State University,
-              currently studying in Bachelor of Science in Information System.
+              currently studying in Bachelor of Science in Information System.My
+              academic journey is driven by a passion for technology,
+              innovation, and problem-solving. I thrive on tackling complex
+              challenges and am constantly expanding my skillset to stay at the
+              forefront of the ever-evolving tech landscape. Whether it's
+              coding, data analysis, or system management, I am committed to
+              excelling and contributing to the field of Information Systems.
+              Ready to connect, collaborate, and create impactful solutions.
             </p>
           </div>
           <div class="col-lg-5">
@@ -260,6 +267,24 @@
         </div>
       </div>
     </div>  -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        document.querySelectorAll("a[href^='#']").forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            const targetPosition = targetElement.offsetTop - navbarHeight;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          });
+        });
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
