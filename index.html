@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+        section {
+            display: none;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+
+        .active {
+            display: block;
+        }
+        
+        .about-container {
+        display: flex;
+        justify-content:flex-start;
+        }
+
+        .name {
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        gap:5px;
+        }
+    
+        .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:auto;
+        gap:50px;
+        }
+    
+        .about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width:auto;
+        gap:20px;
+        }
+    
+        .button{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        .about-image {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 140px;
+        
+        }
+
+        .about-image img {
+        width: 300px;
+        }
+
+        .skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    
+        .skills-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+    
+        .skills-list img{
+            width:80px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .certificate-grid {
+            display: flex;
+            gap: 20px;
+        }
+    
+        .certificate-grid img{
+            width:230px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .experience-card {
+            border: 2px solid yellow;
+            padding: 20px;
+            background-color: #eee;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+    <div class="logo">
+        <h1>THE<br>DOER's</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('about')">Home</a></li>
+            <li><a onclick="showSection('about')">About Me</a></li> <!-- New "About Me" list item -->
+            <li><a onclick="showSection('skills')">Skills</a></li>
+            <li><a onclick="showSection('certificates')">Certificates</a></li>
+            <li><a onclick="showSection('experience')">Experience</a></li>
+            <li><a onclick="showSection('contacts')">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  
+<section id="about" class="active">
+    <div class="about-container">
+        <div class="about"
+          <div class="intro">
+          <div class="name">
+            <h1>Hi, I'm Khrystel</h1>
+            <p>Software Developer</p>
+          </div>    
+            <p>I’m a dedicated and passionate software developer in designing, developing and deploying software solutions. Driven by 
+                a passion for continuously learning, I am always seeking new challenges and opportunities to grow my skills.</p>    
+          <div class="button">
+            <button>Contact Me</button>  
+          </div>    
+        </div>
+        
+        <div class="about-image">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vn43u46/Desktop%20-%201%20(1).png" alt="Khrystel's Photo">
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="skills">
+        <div class="skills-container">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vnjzu86/images%20(4).png" alt="Figma">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vnjzu86/images%20(2).jpeg" alt="HTML">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vnjzu86/images%20(6).png" alt="CSS">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vnjzu86/images%20(7).png" alt="JS">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vnjzu86/images%20(3).png" alt="PostgreSQL">
+            <img src="https://assets.onecompiler.app/42sffn55e/42vnjzu86/images%20(5).png" alt="Bootstrap">
+        </div>
