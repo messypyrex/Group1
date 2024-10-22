@@ -732,5 +732,31 @@ span {
 
 }
 
+@media (max-width: 768px) {
+    .skill-main {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-main h3 {
+        font-size: 3rem;
+    }
+
+    .skill-left .skill-bar .info {
+        font-size: 1.7rem;
+    }
+
+    .box .text big {
+        font-size: 1.5rem;
+    }
+
+    .box .text small {
+        font-size: 1.6rem;
+    }
+
+    .circle {
+        height: 90px;
+    }
+}
+
 /*CV*/
 
