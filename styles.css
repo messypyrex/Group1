@@ -14,7 +14,7 @@
 
 :root {
    
-    --bg-color:#191f36;
+    --bg-color:#010204;
     --snd-bg-color: #262840;
     --text-color:#ffff;
     --main-color:#ffdd5e;
@@ -300,11 +300,13 @@ span {
 
 .portfolio-layer h4 {
     font-size: 3rem;
+    color: var(--bg-color);
 
 }
 
 .portfolio-layer p {
     font-size: 1.6rem;
+    color: var(--bg-color);
     margin: .3rem 0 1rem;
 }
 
@@ -323,6 +325,145 @@ span {
     color: var(--snd-bg-color);
 
 }
+
+/*skills*/
+
+.skills {
+    color: var(--text-color);
+}
+
+.skill-main {
+    margin-top: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 70px;
+
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.6rem ;
+    text-align: center;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 90%;
+    height: 10px;
+    background-color: var(--snd-bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--main-color);
+    border-radius: 25px;
+    box-shadow: var(--snd-bg-color);
+}
+
+.skill-bar .bar .html {
+    width: 72%;
+    animation: html 2s ease-in-out;
+}
+
+.skill-bar .bar .CSS {
+    width: 79%;
+    animation: CSS 2s ease-in-out;
+}
+
+.skill-bar .bar .Figma {
+    width: 90%;
+    animation: Figma 2s ease-in-out;
+}
+
+.skill-bar .bar .Database {
+    width: 69%;
+    animation: Database 2s ease-in-out;
+}
+
+/*skill-right*/
+
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.box {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+    
+}
+
+.box .text {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.box .text big {
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.box .text small {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100%; 
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--text-color);
+    border-radius: 30%; 
+    position: relative; 
+}
+
+.circle .points {
+    width: 2px;
+    height: 10px;
+    background-color: var(--text-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+    opacity: 0; 
+}
+
+.points.marked {
+    opacity: 1; 
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
 
 /*contacts*/
 
@@ -539,6 +680,56 @@ span {
         }
 
     }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 72%;
+    }
+}
+
+@keyframes CSS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 79%;
+    }
+}
+
+@keyframes Figma{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes Database{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 69%;
+    }
+}
+
+@keyframes glow {
+   
+    0%{
+        background: var(--snd-bg-color);
+        box-shadow: none;
+    }
+
+    100%{
+        background: var(--main-color);
+        box-shadow: var(--main-color);
+    }
+
 }
 
 /*CV*/

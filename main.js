@@ -47,7 +47,7 @@ ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 'bottom'});  
 ScrollReveal().reveal('.home-contact h1, .about-img', {origin: 'left'});
 ScrollReveal().reveal('.home-contact p, .about-content', {origin: 'right'});
-
+ScrollReveal().reveal('.skills .skill-main', {origin: 'left'});
  /*-----------------------type-------------------*/
 const typed = new Typed('.multiple-text', {
     strings: ['Frontend Developer', 'Web Designer', 'IS student'],  
@@ -55,7 +55,33 @@ const typed = new Typed('.multiple-text', {
     backSpeed: 70,
     backDelay: 1000,
     loop: true
+
+
 });
+
+
+// Circle skill functionality
+const circles = document.querySelectorAll('.circle');
+circles.forEach(elem => {
+    const dots = elem.getAttribute("data-dots");
+    const marked = elem.getAttribute("data-percent");
+    const percent = Math.floor(dots * marked / 100);
+    let points = "";
+    const rotate = 360 / dots;
+
+    for (let i = 0; i < dots; i++) {
+        points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+    }
+
+    elem.innerHTML = points;
+
+    const pointsMarked = elem.querySelectorAll(".points");
+    for (let i = 0; i < percent; i++) {
+        pointsMarked[i].classList.add('marked');
+    }
+});
+
+
 
 
 
