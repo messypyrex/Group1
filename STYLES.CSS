@@ -104,6 +104,8 @@ span {
     animation: floatImage 4s ease-in-out infinite;
 }
 
+
+
 @keyframes floatImage {
     0%{
         transform: translateY(0);
@@ -117,7 +119,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 4.5rem;
 
 }
 
@@ -465,7 +467,7 @@ span {
 
     .navbar a {
         display: block;
-        font-size: 2rem;
+        font-size: 10rem;
         margin: 3rem 0;
     }
 
@@ -474,11 +476,11 @@ span {
     }
 
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 10rem;
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 10rem;
     }
 
     .home-content {
