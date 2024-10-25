@@ -1,0 +1,42 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card {
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  #services {
+    padding-top: 100px; 
+    background-color: #f4f4f4; 
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
