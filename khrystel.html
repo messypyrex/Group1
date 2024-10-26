@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="khrystel.css">
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+        <h1>THE DOER's</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="homepage.html" target="_blank">Home</a></li>
+            <li><a onclick="showSection('about')">About Me</a></li> <!-- New "About Me" list item -->
+            <li><a onclick="showSection('skills')">Skills</a></li>
+            <li><a onclick="showSection('certificates')">Certificates</a></li>
+            <li><a onclick="showSection('experience')">Experience</a></li>
+            <li><a onclick="showSection('contacts')">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+  
+<section id="about" class="active">
+    <div class="about-container">
+        <div class="about"
+          <div class="intro">
+          <div class="name">
+            <h1>Hi, I'm Khrystel</h1>
+            <p>Software Developer</p>
+          </div>    
+            <p>I’m a dedicated and passionate software developer in designing, developing and deploying software solutions. Driven by 
+                a passion for continuously learning, I am always seeking new challenges and opportunities to grow my skills.</p>    
+          <div class="button">
+            <button>Contact Me</button>  
+          </div>    
+        </div>
+        
+        <div class="about-image">
+            <img src="khrystelimg/khrystell.png" alt="Khrystel's Photo">
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+        <img src="khrystelimg/figma.png" alt="Figma">
+        <img src="khrystelimg/html.jpg" alt="html">
+        <img src="khrystelimg/css.png" alt="css">
+        <img src="khrystelimg/Javascript.png" alt="js">
+        <img src="khrystelimg/postgresql.png" alt="MySQL">
+        <img src="khrystelimg/bootstrap.jpg" alt="Bootstrap">
+    </div>
+</section>
+
+
+
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificate-grid">
+        <img src="cert1(k).jpg" alt="Certificate 1">
+        <img src="cert2(k).jpg" alt="Certificate 2">
+
+    </div>
+</section>
+
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-card">
+        <h3>Software Developer</h3>
+        <p>InnovateTech Solutions</p>
+        <p>June 2022 – Present</p>
+        <ul>
+            <p>-Led the development of responsive web applications, significantly improving user accessibility across different devices and reducing support queries by 20%.  </p>
+            <p>-Enhanced the user interface by implementing dynamic features...</p>
+            <p>-Streamlined data integration by optimizing database queries, leading to faster data retrieval and a 25% improvement in system efficiency.</p>
+            <p>-Collaborated with cross-functional teams to deliver high-quality features in a fast-paced Agile environment, ensuring timely completion of project milestones.
+</p>
+            <p></p>
+        </ul>
+    </div>
+    <div class="experience-card">
+        <h3>Junior Web Developer</h3>
+        <p>CodeCraft Labs</p>
+        <p>August 2020 – May 2022</p>
+        <ul>
+            <p>-Built and maintained client websites, improving overall site usability and reducing bounce rates by improving page speed and navigation flow.  </p>
+            <p>-Played a key role in turning design mockups into fully functional websites, helping clients achieve a modern and user-friendly web presence.</p>
+            <p>-Worked closely with back-end teams to integrate data and deliver seamless user experiences, contributing to several high-traffic projects.  
+</p>
+            <p>- Assisted in troubleshooting and debugging, significantly reducing issues before product launches and ensuring smoother deployments.</p>
+        </ul>
+    </div>
+</section>
+
+
+<section id="contacts">
+    <div class="contact-card">
+        <h3>Khrystel Ricci Torres Penaflor</h3>
+        <div class="contact-item">
+            <a href="krpenaflor2002@gmail.com">
+                <img src="email(k).png" alt="Email" class="contact-icon"> 
+                krpenaflor2002@gmail.com
+            </a>
+        </div>
+        <div class="contact-item">
+            <a href="+639266598124">
+                <img src="phone(k).png" alt="Phone" class="contact-icon"> 
+                09266598124
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+    
+    <script>
+        function showSection(sectionId) {
+         
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
