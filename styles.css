@@ -1,0 +1,316 @@
+/***** HOME PAGE *****/ 
+.home-text h1 {     /***** Position og font Style sa My portfolio nga text *****/
+    font-family: "Krona One";
+    font-size: 80px;
+    margin-top: 100px;
+    max-width: 50%;
+    color: white;
+}
+
+.home-text p {  
+    font-size: 20px;
+    color:white;
+    font-family: "Kanit";
+    margin-top: -30px;
+}    
+
+/***** CONTACTS PAGE *****/ 
+.contacts-text h1 {  /***** Position og font Style sa My Contacts nga text *****/
+    font-family: "Krona One";
+    font-size: 80px;
+    margin-top: 100px;
+    max-width: 50%;
+    color: white;
+}
+
+.contact-information h2 {    /***** Position og style sa number *****/
+    font-family: "Krona One";
+    font-size: 15px;
+    margin-top: -40px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.contact-information h3 {    /***** Position og style sa carsu email *****/
+    font-family: "Krona One";
+    font-size: 15px;
+    margin-top: -10px;
+    margin-left: 10px;
+    color: white;   
+}
+
+.contact-information h4 {    /***** Position og style sa fb account *****/
+    font-family: "Krona One";
+    font-size: 15px;
+    margin-top: -5px;
+    margin-left: 10px;
+    color: white;
+}
+
+.contact-icon {    /***** Position sa phone, carsu logo, og fb logo *****/ 
+    width: 25px; 
+    height: 25px;
+    margin-right: 10px;
+}
+
+/***** SERVICES PAGE *****/
+.service-text p {   /***** Position og style sa Services nga text *****/
+    font-family: "Krona One";
+    font-size: 80px;
+    margin-top: -130px;
+    margin-left: 430px;
+    margin-right: -120px;
+    max-width: 50%;
+    color: white;
+}
+
+.icons  {    /***** Position sa mga logo and text as a whole*****/
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    margin-right: 1000px;
+    margin-left: -670px;
+    justify-content: space-evenly;
+}
+
+.icons img {    /***** Position og style sa corresponding logo every service *****/
+    width: 200px; 
+    height: 180px;
+    margin: 40px; 
+}
+
+.ui, .appdev, .coding, .management {    /***** Style og color sa fonts sa services *****/
+    font-family: "Krona One";
+    color: white;
+}
+
+/***** ABOUT ME PAGE *****/
+.about-me h1 {      /***** Position og style sa about me na text *****/
+    font-family: "Krona One";
+    font-size: 80px;
+    margin-top: -130px;
+    margin-left: 430px;
+    margin-right: -120px;
+    max-width: 100%;
+    color: white;
+}
+
+.certificates {     /***** Position sa certificates *****/
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+    margin-right: 750px;
+    margin-left: -670px;
+    justify-content: space-evenly;
+}
+
+.certificates img {  /***** Size sa certificates *****/   
+    width: 250px; 
+    height: 180px;
+    margin: 40px; 
+}
+
+.story {    /***** Position og style sa story *****/
+    font-size: 20px;
+    color:white;
+    font-family: "Kanit";
+    margin-top: -50px;
+    margin-left: 310px;
+    margin-right: -200px;
+    text-align: center;
+}
+
+header {   /***** Position is fixed so para pag scroll makita gihapon ang header *****/ 
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1;
+}
+
+.container {    /***** To contain and organize the header *****/
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {     /***** Logo of the team with styles and animation *****/
+    color: rgb(231, 230, 230);
+    animation: colorChange 5s ease infinite;
+    background: linear-gradient(90deg, #ffcc00, #ff6b6b, #4a90e2, #50c878);
+    background-size: 400% 400%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 28px;
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+@keyframes colorChange {  /***** Logo Animation Color Palette *****/
+
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.carl-pic img {     /***** Carl's picture and position *****/
+    max-width: 1000px;
+    margin-bottom: -140px;
+    margin-right: -10px;
+}
+
+.background {   /***** Background video position *****/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;    /***** Para di mutabon sa text *****/
+    overflow: hidden;
+}
+
+#background-vid {   /***** Background video size *****/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /***** Para ma cover ang background as a whole *****/
+}
+
+nav ul {    /***** Navigation Bar listing style *****/
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {   /***** Normal color of the navigation list (home, contacts, services, about me *****/
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Inter";
+    transition: color 0.3s ease;
+    margin-left: 20px;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a.active {    /***** Underline and navigation text sa current page *****/
+    border-bottom: 2px solid #fff; 
+}
+
+nav ul li a:hover {   /***** Normal color of the navigation list (home, contacts, services, about me *****/
+    background: linear-gradient(90deg, #ffcc00, #ff6b6b, #4a90e2, #50c878);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.4s ease-in-out, -webkit-text-fill-color 0.4s ease-in-out;
+}
+
+.text {     /***** Position sa mga text sa web as a whole *****/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    position: relative;
+}
+
+/***** Responsive Design *****/ 
+@media (max-width: 768px) {
+    .home-text h1 {
+        font-size: 2.5rem;
+        margin-left: 90px;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+
+    .contacts-text h1 {
+        font-size: 2.5rem;  
+        margin-left: 90px;
+    }
+
+    .contact-information h2, h3, h4 {
+        margin-top: 20px;
+    }
+
+    .service-text p {
+        font-size: 2.5rem;  
+        margin-left: 100px;
+        margin-top: -600px;
+        text-align: center;
+    }
+
+    .icons {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-right: 200px;
+      margin-left: -100px;
+    }
+
+    .icons img {
+        margin-left: 100px;
+    }
+
+    .about-me h1 {
+        font-size: 2.5rem;  
+        text-align: center;
+        margin-right: 350px;
+        margin-top: 120px;
+
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        text-align: center;
+        margin-right: 230px;
+        margin-top: 10px;
+        margin-bottom: 60px;;
+    }
+    
+    .certificates {
+        flex-direction: column;
+        margin-left: -320px;
+        margin-right: 270px;
+        margin-bottom: -800px;
+    }
+
+    .carl-pic img {
+        max-width: 80%;  /* Scale image down on smaller screens */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul, li, a {
+        margin-left: -72px;
+    }
+
+    .logo {
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
