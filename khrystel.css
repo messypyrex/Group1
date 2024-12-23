@@ -52,11 +52,18 @@ display: flex;
 justify-content:flex-start;
 }
 
+.about{
+display: flex;
+flex-direction: column;
+align-items: flex-start;    
+}
+
 .name {
 display: flex;
 flex-direction: column;
 width:auto;
 gap:5px;
+padding-bottom: 40px;    
 }
 
 .intro {
@@ -64,7 +71,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 width:auto;
-gap:50px;
+
 }
 
 .about {
@@ -72,24 +79,30 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 width:auto;
-gap:20px;
 }
 
-.button{
-display: flex;
-align-items: center;
-justify-content: space-between;
+.button {
+background-color: gray;
+color: white;
+border-radius: 5px;
+    margin-top: 50px;
+padding: 10px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners */
+    font-family: 'Arial', sans-serif;
 }
 
 .about-image {
-display:flex;
+display: flex;
 flex-direction: column;
-align-items: flex-start;
-margin-left: 140px;
+align-items: flex-start;  
 }
 
 .about-image img {
 width: 300px;
+    
 }
 
 .skills-container {
